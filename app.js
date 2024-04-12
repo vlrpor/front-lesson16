@@ -29,3 +29,11 @@ function getRandomNumber() {
 }
 const randomNumber = getRandomNumber();
 console.log(randomNumber)
+
+//5.ლექციაზე დაწერილ რეპოზიტორში მოცემულია ფაილი characters.js სადაც გვაქვს პერსონაჟების მასივი (characters). გადააკოპირეთ ეს მასივი თქვენთან და შემდეგ შექმენით ფუნქცია,  რომელიც პარამეტრად მიიღებს ამ მასივს და დააბრუნებს იმ ელემენტებს(ობიექტებს), რომელთა alternate_names მასივის მნიშვნელობაც არის ცარიელი
+
+function getEmptyAlternateNames(characters) {
+    return characters.filter(character => character.alternate_names.length === 0);
+}
+
+console.log(getEmptyAlternateNames(characters));
